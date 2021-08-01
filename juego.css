@@ -1,0 +1,142 @@
+*{
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    font-size:20px ;
+    
+}
+body{
+    background-color:rgba(64, 224, 208, 0.342);
+    background-image: url(fondo.jpeg);
+} 
+    
+.areaTotal{
+    display: grid;
+    grid-template-columns: 34% 33% 33% 33%;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-template-areas: 
+    "jugadoresContadores"
+    "f1c1 f1c2 f1c3"
+    "f2c1 f2c2 f2c3"
+    "f3c1 f3c2 f3c3"
+    "botones "
+    "footer footer";
+}
+.jugadoresContadores{
+    grid-area: jugadoresContadores;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+}
+.f1c1, .f1c2, .f1c3{
+    grid-area: f1c1, f1c2, f1c3;
+    height: 100px;
+    width: 100px;
+    border:5px solid;
+}
+.f2c1, .f2c2, .f2c3{
+    grid-area:f2c1, f2c2, f2c3;
+    height: 100px;
+    width: 100px;
+    border:5px solid;
+}
+.f3c1, .f3c2, .f3c3{
+    grid-area:f2c1, f2c2, f2c3;
+    height: 100px;
+    width: 100px;
+    border:5px solid;
+}
+.footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+header{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.87);
+}
+h1{
+    font-size:40px;
+}
+.fila1{
+    display: flex;
+    justify-content: center;
+}
+.fila2{
+    display: flex;
+    justify-content: center;
+}
+.fila3{
+    display: flex;
+    justify-content: center;
+}
+.fin{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    background-color:rgba(240, 255, 255, 0.397);
+}
+.nuevaPartida{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    border:5px solid;
+    font-size:20px;
+}
+.contadoracero{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction:row;
+    border:5px solid;
+    font-size: 20px;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+    font-size: 20px;
+    border-top: 20px;
+    align-items: center;
+}
+.jugador1{
+    border:none;
+    border-radius: 10px;
+}
+.jugador2{
+    border:none;
+    border-radius: 10px;
+}
+.f1c1:hover{
+    background-color: rgba(34, 139, 34, 0.411);
+}
+.f1c2:hover{
+    background-color: rgba(13, 195, 13, 0.411);
+}
+.f1c3:hover{
+    background-color: rgba(34, 139, 34, 0.411);
+}
+.f2c1:hover{
+    background-color: rgba(13, 195, 13, 0.411);
+}
+.f2c2:hover{
+    background-color: rgba(34, 139, 34, 0.411);
+}
+.f2c3:hover{
+    background-color: rgba(13, 195, 13, 0.411);
+}
+.f3c1:hover{
+    background-color: rgba(34, 139, 34, 0.411);
+}
+.f3c2:hover{
+    background-color: rgba(13, 195, 13, 0.411);
+}
+.f3c3:hover{
+    background-color: rgba(34, 139, 34, 0.411);
+}
